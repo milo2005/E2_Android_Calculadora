@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:text="@string/titulo"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/title_size"
+        android:gravity="center"
+        android:padding="@dimen/padding_small"
+        />
+
+    <EditText
+        android:id="@+id/edit_number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/numeroUno"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/edit_number2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:hint="@string/numeroDos"
+        android:inputType="number"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:text="@string/sumar"
+            />
+
+        <Button
+            android:id="@+id/btn_rest"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:text="@string/restar"
+            />
+        <Button
+            android:id="@+id/btn_multi"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplicar"
+            />
+        <Button
+            android:id="@+id/btn_div"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:text="@string/dividir"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
